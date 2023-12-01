@@ -77,20 +77,22 @@ After completing the data preprocessing steps involving feature scaling, one-hot
 
            0       0.76      0.22      0.34     10848
            1       0.60      0.95      0.74     13580
-    accuracy                           0.62     24428
-   macro avg       0.68      0.58      0.54     24428
-weighted avg       0.67      0.62      0.56     24428
+           accuracy                           0.62     24428
+           macro_avg       0.68      0.58      0.54     24428
+           weighted_avg       0.67      0.62      0.56     24428
+
+
 
 
 ### Random Forest
 - Accuracy: 1.0000
--               precision    recall  f1-score   support
+-             precision    recall  f1-score   support
 
            0       1.00      1.00      1.00     10848
            1       1.00      1.00      1.00     13580
-    accuracy                           1.00     24428
-    macro avg       1.00      1.00      1.00     24428
-weighted avg       1.00      1.00      1.00     24428
+           accuracy                           1.00     24428
+           macro_avg       1.00      1.00      1.00     24428
+           weighted_avg       1.00      1.00      1.00     24428
 
 
 
