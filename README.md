@@ -97,7 +97,7 @@ After completing the data preprocessing steps involving feature scaling, one-hot
 
 
 ## Conclusions
-In conclusion, while logistic regression and naive bayes showcased reasonable performances, the random forest model delivered exceptional results, demonstrating a superior ability to distinguish between edible and poisonous mushrooms in this dataset.
+Therefore, while both `logistic regression` and `naive bayes` showcased reasonable performances, the `random forest` model delivered exceptional results, demonstrating a superior ability to distinguish between edible and poisonous mushrooms in this dataset.
 
 
 ## Contributor:
