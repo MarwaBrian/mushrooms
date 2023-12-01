@@ -1,5 +1,5 @@
-# Mycological Risk Assessment - Machine Learning Approach
-![Mushroom Species ](https://github.com/MarwaBrian/mushrooms/blob/main/mushroooms.png)
+# Mycological Risk Assessment - Machine Learning Approach.
+![Sample Mushroom Species ](https://github.com/MarwaBrian/mushrooms/blob/main/mushroooms.png)
 
 
 ## Problem statement
@@ -10,7 +10,7 @@ The project's focus is to train a machine learning model capable of accurately c
 
 
 ## BUSINESS UNDERSTANDING
-This project aims to employ machine learning algorithms on the Mushroom dataset, which comprises diverse physical attributes of mushrooms. By leveraging these attributes such as cap shape, odor, and gill size, the goal is to develop a robust model for accurate classification between edible and poisonous mushrooms. This model could significantly improve the efficiency and safety of mushroom identification processes for mycologists and enthusiasts.
+Identifying edible vs. poisonous mushrooms presents challenges due to their varied traits. Leveraging machine learning on the Mushroom dataset's key features like cap shape and odor, this project aims to create a precise classification tool. It aims to boost safety and efficiency for mycologists and enthusiasts involved in mushroom analysis.
 
 ## Components
 
@@ -63,6 +63,8 @@ Here I worked on data cleaning, handled missing values, data transformation, han
 ### Logistic Regression Model
 
 After completing the data preprocessing steps involving feature scaling, one-hot encoding of categorical variables, and handling class imbalance using SMOTE, the dataset is now ready for model implementation.
+
+We, begin with Logistic regression as a baseline model. Here are results for this model.
 
 - Accuracy: 0.8636
 - Precision: 0.8899627121223651
