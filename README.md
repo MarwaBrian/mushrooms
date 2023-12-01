@@ -1,5 +1,5 @@
 # Mycological Risk Assessment - Machine Learning Approach
-![Mushroom ](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/tweaks/king_county.webp)
+![Mushroom Species ](https://github.com/MarwaBrian/mushrooms/blob/main/mushroooms.png)
 
 
 ## Problem statement
