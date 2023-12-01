@@ -1,21 +1,21 @@
-# House Price Forecasting with Regression Modeling
-
-![King County, Washington](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/tweaks/king_county.webp)
+# Mycological Risk Assessment - Machine Learning Approach
+![Mushroom ](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/tweaks/king_county.webp)
 
 
 ## Problem statement
-Real estate developers encounter difficulties when assessing the precise influence of individual metrics and attributes on house pricing within the KC housing dataset. Their primary concern is the degree to which these factors interact to affect pricing outcomes. The current lack of clarity in pricing decisions can result in instances of both overpricing and underpricing of properties. And to address this issue, we aim to develop a more comprehensive understanding of the dataset's variables, enabling them to make more accurate pricing decisions based on a combination of factors.
+Mycologists face the daunting challenge of quickly and accurately distinguishing edible mushrooms from poisonous mushrooms based on their physical attributes. To address this, the project aims to develop a robust machine learning model using the Mushroom dataset. This model seeks to provide mycologists with a reliable tool for on-the-spot mushroom classification during fieldwork, significantly reducing the risks associated with misidentification and enhancing safety measures for both researchers and the general populace.
 
 ## PROJECT OVERVIEW 
-The project focuses on the creation of a machine-learning project for house-price forecasting for investors to owners to buyers.
+The project's focus is to train a machine learning model capable of accurately classifying mushrooms as edible or poisonous by analysing their physical characteristics. The model is designed to assist teams of mycologists in conducting risk assessments associated with fungal species.
+
 
 ## BUSINESS UNDERSTANDING
-House price forecasting is a crucial task in the real estate industry. Accurate predictions assist homebuyers, sellers, and investors in making informed decisions regarding property transactions.
+This project aims to employ machine learning algorithms on the Mushroom dataset, which comprises diverse physical attributes of mushrooms. By leveraging these attributes such as cap shape, odor, and gill size, the goal is to develop a robust model for accurate classification between edible and poisonous mushrooms. This model could significantly improve the efficiency and safety of mushroom identification processes for mycologists and enthusiasts.
 
 ## Components
 
 * **Jupyter Notebook**
-The [Jupyter Notebook](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/main/student.ipynb) is our key deliverable and contains details of the approach and methodology, data cleaning, exploratory data analysis, pipelines, model building and validation.
+The [Jupyter Notebook](https://github.com/MarwaBrian/mushrooms/blob/main/index.ipynb) is my key deliverable and contains details of the approach, methodology, data cleaning, exploratory data analysis, pipelines, model building and validation used.
 
 I recommend using [nbviewer](https://nbviewer.jupyter.org/) to view the Jupyter Notebook.
 
@@ -24,7 +24,7 @@ The [presentation](https://) gives a high-level overview of our approach, findin
 
 * **Data**
 
-The dataset can be found in the file *"kc_house_data.csv"* in the Data folder, in this repository. It was originally provided in the following [repository](https://github.com/Wairimukimm/dsc-phase-2-project-v2-3/blob/main/data/kc_house_data.csv). 
+The dataset can be found in the file *"secondary_data.csv"* in the Data folder, in this repository. It was originally provided in the following [repository](https://github.com/MarwaBrian/mushrooms/blob/main/dataset/secondary_data.csv). 
 
 ## Technologies/ Packages
 
@@ -42,8 +42,8 @@ The dataset can be found in the file *"kc_house_data.csv"* in the Data folder, i
 2. Dataset can be found in the file "secondary_data.csv".
 3. Check requirements in Technologies section above and download libraries if necessary.
 
-## 1. Data Wrangling
-Here I will work on data cleaning, handling missing values, data transformation, handling duplicates, data reshaping and other processes to ensure that I have a clean, structured, and suitable format for analysis and modeling.
+## 1. Data Understanding
+Here I loaded the data and got a brief introduction to the columns I was working with.
 
 ## 2. Exploratory Data Analysis (EDA)
 Here we will explore the different features of the dataset to gain a better understanding of the data. We will use data vizualization to uncover trends and patterns. We will use Feature Engineering to create new features from existing ones and perform One-Hot Encoding on categorical variables that we will require for analysis.
@@ -51,11 +51,13 @@ Here we will explore the different features of the dataset to gain a better unde
 Most houses are priced around a half million to a million dollars,
 while the most expensive houses imply the order of two million dollars and more
 
-**Overview of house features**
-- Categorical features of the house include `id`, `date`, `bedrooms`, `floors`, `waterfront`, `view`, `grade`, `year_built`, `yr_renovetd`, `zipcode`, `lat`, `long`.
-- Numerical variables include `price`, `sqft_living`, ``.
-- it is can be noticed that as `bedrooms` increase, so does the house's selling price
-- more `floors`, preferably up to 2.5 have a higher price  
+**Overview of mushroom features**
+- Categorical features include `class`, `cap-shape`, `cap-surface`, `cap-color`, `does-bruise-or-bleed`, `gill-attachment`, `gill-spacing`, `gill-color`, `stem-root`, `stem-surface`, `stem-color`, `veil-type`, `veil-color`, `has-ring`, `ring-type`, `spore-print-color`, `habitat`, `season` 
+- Numerical variables include `cap-diameter`, `stem-height`, `stem-width`.
+
+
+## 3. Data Preprocessing & Pipeline Setup
+Here I worked on data cleaning, handled missing values, data transformation, handled duplicates, data reshaping and other processes to ensure that I have a clean, structured, and suitable format for analysis and modeling.
 
 ## 3. Base Model
 ### Logistic Regression Model
@@ -75,7 +77,6 @@ After completing the data preprocessing steps involving feature scaling, one-hot
 
            0       0.76      0.22      0.34     10848
            1       0.60      0.95      0.74     13580
-
     accuracy                           0.62     24428
    macro avg       0.68      0.58      0.54     24428
 weighted avg       0.67      0.62      0.56     24428
@@ -87,9 +88,8 @@ weighted avg       0.67      0.62      0.56     24428
 
            0       1.00      1.00      1.00     10848
            1       1.00      1.00      1.00     13580
-
     accuracy                           1.00     24428
-   macro avg       1.00      1.00      1.00     24428
+    macro avg       1.00      1.00      1.00     24428
 weighted avg       1.00      1.00      1.00     24428
 
 
