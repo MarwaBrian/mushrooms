@@ -23,7 +23,6 @@ I recommend using [nbviewer](https://nbviewer.jupyter.org/) to view the Jupyter 
 The [presentation](https://) gives a high-level overview of our approach, findings and recommendations for non-technical stakeholders. It is aimed to be between 5 and 10 minutes long.
 
 * **Data**
-
 The dataset can be found in the file *"secondary_data.csv"* in the Data folder, in this repository. It was originally provided in the following [repository](https://github.com/MarwaBrian/mushrooms/blob/main/dataset/secondary_data.csv). 
 
 ## Technologies/ Packages
